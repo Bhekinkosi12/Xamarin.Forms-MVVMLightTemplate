@@ -37,7 +37,7 @@ namespace MVVMLightTemplate.ViewModels
             if (PropertyChanged == null)
                 return;
 
-            PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
     }
